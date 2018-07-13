@@ -23,9 +23,8 @@ alias h='cd ~'                      #h: Goes to home directory
 
 #Virtual Environmnet Set-up
 #Set Location where virtual Environments should live
-#export WORKON_HOME=~/Envs/projects
-#export PROJECT_HOME=~/Desktop/CS/Envs
-#source /usr/local/bin/virtualenvwrapper.sh
+export WORKON_HOME=~/Envs
+source /usr/local/bin/virtualenvwrapper.sh
 
 # Expand the history size
 export HISTFILESIZE=10000
@@ -65,6 +64,9 @@ alias 666='chmod -R 666'
 alias 755='chmod -R 755'
 alias 777='chmod -R 777'
 
+# Edit this .bashrc file
+alias ebp='edit ~/.bash_profile'
+
 #####################################################
 #                      Functions                    #
 #####################################################
@@ -83,4 +85,11 @@ up ()
         d=..
     fi
     cd $d
+}
+
+# Create and go to the directory
+mkdirg ()
+{
+	mkdir -p $1
+	cd $1
 }
