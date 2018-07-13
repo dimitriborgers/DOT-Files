@@ -90,6 +90,16 @@ up ()
 # Create and go to the directory
 mkdirg ()
 {
-	mkdir -p $1
-	cd $1
+    mkdir -p $1
+    cd $1
+}
+
+#Automatically do an ls after each cd
+cd ()
+{
+  if [ -n "$1" ]; then
+      builtin cd "$@" && clear && ls
+  else
+      builtin cd ~ && clear && ls
+  fi
 }
