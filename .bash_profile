@@ -20,6 +20,7 @@ alias a='ls -a'                     #a: Shows all files, including hidden
 alias l='ls'                        #l: Shows all files
 alias ll='ls -lG'                   #ll: Shows all directories and contraints
 alias h='cd ~'                      #h: Goes to home directory
+alias al='ls -al'                   #al: Shows all files and permissions
 
 #Virtual Environmnet Set-up
 #Set Location where virtual Environments should live
